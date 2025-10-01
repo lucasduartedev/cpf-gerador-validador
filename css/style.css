@@ -1,0 +1,151 @@
+
+:root {
+
+    --font-principal: "Inter", sans-serif;
+
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --azul: #98D3FF;
+    --azul-claro: #E0F9FF;
+    --azul-escuro: #111A35;
+    --cinza: #76777C;
+    --cinza-claro: #E2E2E2;
+    --cinza-escuro: #575758;
+    --verde-claro: #73EEAC;
+    --vermelho-claro: #fd4242;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-principal);
+    background-color: var(--cinza);
+    color: var(--cinza-claro);
+    text-align: center;
+    /* font-size: 30px; */
+    /* font-weight: 700; */
+    /* margin: 0.2em; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--cinza-claro);
+}
+
+.cabecalho {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.cabecalho__descricao {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.gerador__titulo {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.gerador__area,
+.validador__area {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.gerador__botao-gerar-cpf,
+.validador__botao-validar-cpf {
+    margin: 0 0.5em;
+    padding: 0 10px;
+    display: flex;
+}
+
+.gerador__botao-gerar-cpf:hover,
+.validador__botao-validar-cpf:hover {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 15px;
+}
+
+.gerador__botao-gerar-cpf:active,
+.validador__botao-validar-cpf:active {
+    background-color: var(--cinza);
+    box-shadow: 0 2px 5px;
+    border-radius: 15px;
+}
+
+.gerador__botao-gerar-cpf > img,
+.validador__botao-validar-cpf > img {
+    width: 30px;
+    height: 30px;
+}
+
+.input-cpf {
+    background: transparent;
+    color: var(--branco);
+    padding: 5px 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.input-cpf::placeholder {
+    color: var(--cinza-claro);
+    font-weight: 400;
+}
+
+.validador {
+    margin-bottom: 2em;
+}
+
+.validador__titulo {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.validador__area {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.validador__botao-validar-cpf {
+    margin: 0 0.5em;
+}
+
+.validador__mensagem-validacao {
+    display: none;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: var(--branco);
+    color: var(--vermelho-claro);
+}
+
+.msg-validacao-sucesso {
+    color: var(--verde-claro);
+}
+
+.msg-validacao-fracasso {
+    color: var(--vermelho-claro);
+}
+
+.rodape {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.rodape__texto {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: 500;
+}

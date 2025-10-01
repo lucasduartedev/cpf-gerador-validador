@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador & Validador de CPF</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <header class="cabecalho">
+        <h1 class="cabecalho__titulo">Gerador & Validador</h1>
+        <p class="cabecalho__descricao">Cadastro de Pessoa Física</p>
+    </header>
+
+    <br/>
+
+    <div class="gerador">
+        <h2 class="gerador__titulo">Gerador</h2>
+        <div class="gerador__area">
+            <input readonly type="number" placeholder="informe apenas números" class="input-cpf">
+            <a href="#" class="gerador__botao-gerar-cpf"><img src="img/reload.svg" alt="Símbolo gerar CPF"></a>
+        </div>
+    </div>
+
+    <br>
+    <hr/>
+    <br>
+
+    <div class="validador">
+        <h2 class="validador__titulo">Validador</h2>
+        <div class="validador__area">
+            <input type="text" placeholder="informe apenas números" class="input-cpf">
+            <a href="#" class="validador__botao-validar-cpf"><img src="img/check.svg" alt="Símbolo validar CPF"></a>
+        </div>
+    </div>
+    <label class="validador__mensagem-validacao"><img class="validador__mensagem-validacao-img">CPF Inválido/Válido</label>
     
-    <script src="js/main.js"></script>
+    <footer class="rodape">
+        <p class="rodape__texto"><img src="img/copyright.svg" alt="Símbolo de direitos autorais"> Totos os direitos reservados</p>
+    </footer>
+
+    <script src="js/main.js" type="module"></script>
+
 </body>
 </html>
