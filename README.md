@@ -9,3 +9,6 @@
 - HTML 5
 - CSS 3
 - Javascript
+
+## Outros
+- Código Javascript modularizado, para proteger o código.
