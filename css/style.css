@@ -12,7 +12,7 @@
     --cinza-claro: #E2E2E2;
     --cinza-escuro: #575758;
     --verde-claro: #73EEAC;
-    --vermelho-claro: #fd4242;
+    --vermelho-claro: #af0b0b;
 
 }
 
@@ -130,10 +130,12 @@ a {
 
 .msg-validacao-sucesso {
     color: var(--verde-claro);
+    border-color: var(--verde-claro);
 }
 
 .msg-validacao-fracasso {
     color: var(--vermelho-claro);
+    border-color: var(--vermelho-claro);
 }
 
 .rodape {
