@@ -14,8 +14,7 @@ const BotaoValidarCPF = () => {
 let cpfCampoValidacao = () => {
     let campoCpfValidacao = document.querySelector('[data-campo-cpf-validacao]');
     campoCpfValidacao.addEventListener('click', () => {
-        campoCpfValidacao.classList.remove('msg-validacao-fracasso');
-        campoCpfValidacao.classList.remove('msg-validacao-sucesso');
+        resetarCampoValidacao(campoCpfValidacao);
     })
 
     let cpfValidado = validarCpf([...campoCpfValidacao.value]);
@@ -45,6 +44,11 @@ let validarCpf = (cpf) => {
         return false;
     }
 
+}
+
+let resetarCampoValidacao = (campo) => {
+    campo.classList.remove('msg-validacao-fracasso');
+    campo.classList.remove('msg-validacao-sucesso');
 }
 
 export default BotaoValidarCPF;

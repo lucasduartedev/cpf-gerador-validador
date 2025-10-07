@@ -95,6 +95,12 @@ a {
     text-align: center;
 }
 
+.input-cpf:focus {
+    outline: none;
+    border: 2px solid var(--cinza-claro);
+    cursor: pointer;
+}
+
 .input-cpf::placeholder {
     color: var(--cinza-claro);
     font-weight: 400;
