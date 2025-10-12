@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-<p>Aplicar conhecimentos de Javascript em uma página WEB capaz de __Gerar__ e __validar__ CPF, percorrendo o DOM (Document Object Model) e realizar as funções desejadas.</p>
+<p>Aplicar conhecimentos de Javascript em uma página WEB capaz de <strong>Gerar</strong> e <strong>Validar</strong> CPF, percorrendo o DOM (Document Object Model) e realizar as funções desejadas.</p>
 
 ## Tecnologias
 
